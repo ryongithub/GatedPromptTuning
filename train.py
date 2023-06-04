@@ -125,7 +125,8 @@ def main(args):
     """main function to call from workflow"""
     # set up cfg and args
     cfg = setup(args)
-
+    with open(os.path.join(cfg.OUTPUT_DIR, 'configs.yaml'), 'w') as f:
+        f.write(cfg.dump())
     # Perform training.
     train(cfg, args)
 
