@@ -1,7 +1,7 @@
 # Gated Prompt Tuning
 This is the official PyTorch implementation for "Improving Visual Prompt Tuning for Self-supervised Vision Transformers" [ICML 2023].
 
-This repository is heavily based on official PyTorch implementation of "Visual Prompt Tuning" [ECCV 2022] : [KMnp/vpt](https://github.com/KMnP/vpt).
+This repository is heavily based on the official PyTorch implementation of "Visual Prompt Tuning" [ECCV 2022] : [KMnp/vpt](https://github.com/KMnP/vpt).
 
 <!-- Gated Prompt Tuning proposes an improved prompt tuning method for self-supervised Vision Transformers via introduced learnable scalar gate for each ViT block. With the learnable gates, the prompt tokens selectively interact with task-relevant blocks so that it achieves better transfer performances for self-supervised Vision Transformers.  -->
 
