@@ -1,7 +1,7 @@
 # Gated Prompt Tuning
-This is an official PyTorch implementation for "Improving Visual Prompt Tuning for Self-supervised Vision Transformers" [ICML 2023]
+This is the official PyTorch implementation for "Improving Visual Prompt Tuning for Self-supervised Vision Transformers" [ICML 2023].
 
-This repository is heavily based on official PyTorch implementation of "Visual Prompt Tuning" [ECCV 2022] : [KMnp/vpt](https://github.com/KMnP/vpt)
+This repository is heavily based on official PyTorch implementation of "Visual Prompt Tuning" [ECCV 2022] : [KMnp/vpt](https://github.com/KMnP/vpt).
 
 <!-- Gated Prompt Tuning proposes an improved prompt tuning method for self-supervised Vision Transformers via introduced learnable scalar gate for each ViT block. With the learnable gates, the prompt tokens selectively interact with task-relevant blocks so that it achieves better transfer performances for self-supervised Vision Transformers.  -->
 
@@ -21,18 +21,18 @@ bash env_install.sh
 ```
 
 # Data preparation
-- FGVC : Datasets should be located in 'data' folder (CUB, OxfordFlowers, StanfordCars, StanfordDogs, NABirds) 
-- VTAB : see [`VTAB_SETUP.md`] (following [KMnp/vpt](https://github.com/KMnP/vpt))
-- detailed guideline for data preparation would be revised 
+- FGVC : The datasets should be located in the 'data' folder (CUB, OxfordFlowers, StanfordCars, StanfordDogs, NABirds) 
+- VTAB : Please refer to [`VTAB_SETUP.md`] (in accordance with [KMnp/vpt](https://github.com/KMnP/vpt))
+- A more detailed guideline for data preparation will be updated soon.
 
 # Pretraiend SSL ViTs
-- pretrained checkpoints for MAE, MoCo-v3 should located in 'params' folder
+- pretrained checkpoints for MAE, MoCo-v3 should be located in the 'params' folder.
 
  # Run experiments
  ```
  bash run.sh [data_name] [encoder] [batch_size] [base_lr] [num_tokens] [gate_init]
  ```
- For example for CUB dataset,
+ For example for the CUB dataset, execute
  ```
  bash run.sh cub mae_vitb16 64 0.1 100 5
  ```
