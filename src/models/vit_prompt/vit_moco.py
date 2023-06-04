@@ -107,7 +107,7 @@ class PromptedVisionTransformerMoCo(VisionTransformerMoCo):
                 
     def reinit_temp(self):
         assert self.temp_learn, "reinit_temp() could be run only when config.TEMP_LEARN == True"
-        self.temp.data.copy_(self.temp.data.clamp(min=0.01, max=10.0))
+        self.temp.data.copy_(self.temp.data.clamp(min=self.prompt_config.TEMP_MIN, max=self.prompt_config.TEMP_MAX))
 
     def forward_features(self, x):
         x = self.incorporate_prompt(x)

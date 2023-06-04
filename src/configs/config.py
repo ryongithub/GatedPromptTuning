@@ -81,6 +81,8 @@ _C.MODEL.PROMPT.GATE_INIT = 10
 _C.MODEL.PROMPT.TEMP = 1.0
 _C.MODEL.PROMPT.TEMP_LEARN = False
 _C.MODEL.PROMPT.TEMP_NUM = 12
+_C.MODEL.PROMPT.TEMP_MIN = 0.01
+_C.MODEL.PROMPT.TEMP_MAX = 10.0
 
 
 # ----------------------------------------------------------------------
