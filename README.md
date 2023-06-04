@@ -20,11 +20,12 @@ conda activate [ENV_NAME]
 bash env_install.sh
 ```
 
-# Data preparation (will be updated soon)
+# Data preparation
 - FGVC : Datasets should be located in 'data' folder (CUB, OxfordFlowers, StanfordCars, StanfordDogs, NABirds) 
 - VTAB : see [`VTAB_SETUP.md`] (following [KMnp/vpt](https://github.com/KMnP/vpt))
+- detailed guideline for data preparation would be revised 
 
-# Pretraiend SSL ViTs (will be updated soon)
+# Pretraiend SSL ViTs
 - pretrained checkpoints for MAE, MoCo-v3 should located in 'params' folder
 
  # Run experiments
