@@ -49,7 +49,7 @@ def build_mocov3_model(
     else:
         model = moco_vit_model()
         
-    out_dim = 384 if model_type.endswith('s16') else 784
+    out_dim = 384 if model_type.endswith('s16') else 768
     ckpt = os.path.join(model_root, MODEL_ZOO[model_type])
     checkpoint = torch.load(ckpt, map_location="cpu")
     state_dict = checkpoint['state_dict']
