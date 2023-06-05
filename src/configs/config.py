@@ -83,7 +83,8 @@ _C.MODEL.PROMPT.TEMP_LEARN = False
 _C.MODEL.PROMPT.TEMP_NUM = 12
 _C.MODEL.PROMPT.TEMP_MIN = 0.01
 _C.MODEL.PROMPT.TEMP_MAX = 10.0
-
+# _C.MODEL.PROMPT.TEMP_MIN = 0.05
+# _C.MODEL.PROMPT.TEMP_MAX = 5.0
 
 # ----------------------------------------------------------------------
 # adapter options
